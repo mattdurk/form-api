@@ -19,7 +19,7 @@ class FormSubmissionController extends Controller
        $inquiry->age = isset( $request->age ) ? $request->age : 1;
        $inquiry->gender = isset( $request->gender ) ? $request->gender : 'n/a';
        $inquiry->meta_data = json_encode( $request->all() );
-       $inquiry->save();
+       $inquiry->save(); 
 
        return true;
 
